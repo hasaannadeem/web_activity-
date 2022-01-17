@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UCP</title>
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+			<form method="POST" id="userform" onsubmit="event.preventDefault(); myValidation();">
+				
+				<label for="name" class="required">Name</label>
+				<input type="text" name="name" id="name" />
+		   
+				<label for="rollno" class="required">Roll Number</label>
+				<input type="text" name="rollno" id="rollno" />
+				<input type="submit" value="Submit" class="submit" id="submit" name="submit" />
+				<input type="submit" value="Reset" id="reset" name="reset"/>
+				</div>
+			</form>
+			<div id="result">
+
+			</div>
+		</div>  
+	</div>
+    <script src="js/main.js"></script>
+</body>
+</html>
